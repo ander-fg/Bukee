@@ -1,0 +1,45 @@
+@import "base/variables";
+@import "base/mixins";
+@import "base/typography";
+@import "vendor/normalize";
+@import "components/sprite";
+
+h1, h2, h3, h4, p {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto Slab', serif;
+}
+
+.page-main {
+    background-image: url(../img/bg-main.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__logo {
+        display: block;
+        background-image: url(../img/logo.svg);
+        width: 137px;
+        height: 28px;
+    }
+    &-list {
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+        &__item {
+            margin-left: 15px;
+        }
+    }
+}
+
+/*
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Open Sans', sans-serif;
+*/
